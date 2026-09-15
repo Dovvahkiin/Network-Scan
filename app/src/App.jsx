@@ -7,7 +7,8 @@ function App() {
     <>
       <h1>Welcome</h1>
       <ScanButton onScan={handleScan} loading={loading} />
-      {loading ? <p>Loading...</p> : <p>{result}</p>}
+      {loading && <p>Loading...</p>}
+      {result && <pre>{JSON.stringify(result, null, 2)}</pre>}
     </>
   );
 }
