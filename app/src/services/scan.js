@@ -1,5 +1,7 @@
 const scan = async () => {
-  const result = window.electronAPI.test();
+  await new Promise((resolve) => setTimeout(resolve, 2000));
+
+  const result = await window.electronAPI.scanNetwork();
   return result;
 };
 
