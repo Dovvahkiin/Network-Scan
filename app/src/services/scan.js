@@ -1,5 +1,5 @@
 const scan = async () => {
-  const result = console.log("hello");
+  const result = window.electronAPI.test();
   return result;
 };
 

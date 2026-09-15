@@ -1,6 +1,10 @@
 import scan from "../services/scan.js";
 const ScanButton = () => {
-  return <button onClick={scan}>SCAN</button>;
+  const handleScan = async () => {
+    const result = await scan();
+    return console.log(result);
+  };
+  return <button onClick={handleScan}>SCAN</button>;
 };
 
 export default ScanButton;
