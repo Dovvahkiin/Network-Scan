@@ -1,5 +1,6 @@
 import { execFile } from "node:child_process";
 import { NMAP_PATH, NETWORK } from "../config/electron.js";
+import parseNmapResult from "../utils/nmap-parser.js";
 
 const scanNetwork = () => {
   return new Promise((resolve, reject) => {
@@ -8,7 +9,12 @@ const scanNetwork = () => {
         reject(error);
         return;
       }
-      resolve(stdout);
+      try {
+        const devices = parseNmapResult(stdout);
+        resolve(devices);
+      } catch (error) {
+        reject(error);
+      }
     });
   });
 };
