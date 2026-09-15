@@ -2,9 +2,10 @@
   "name": "app",
   "private": true,
   "version": "0.0.0",
+  "main": "electron/main.js",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "concurrently \"vite\" \"wait-on http://localhost:5173 && electron . \"",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
