@@ -1,5 +1,11 @@
 import path from "node:path";
+import dotenv from "dotenv";
 import { directoryName } from "../utils/dirname.js";
+
+dotenv.config();
+
+const NMAP_PATH = process.env.ENV_NMAP_PATH;
+const NETWORK = process.env.ENV_NETWORK;
 
 const windowConfig = {
   width: 800,
@@ -11,4 +17,4 @@ const windowConfig = {
   resizable: false,
 };
 
-export { windowConfig };
+export { windowConfig, NMAP_PATH, NETWORK };
