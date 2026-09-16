@@ -1,7 +1,12 @@
 [
   {
-    "ip": "172.16.128.1",
-    "mac": "08:55:31:2D:01:65",
-    "name": "My computer"
+    "ip": "someIpAddress",
+    "mac": "someMacAddress",
+    "name": "Desktop PC - My Computer"
+  },
+  {
+    "ip": "someIpAddress",
+    "mac": "someMacAddress",
+    "name": "Iphone 11 Pro - My Phone"
   }
 ]
