@@ -1,0 +1,56 @@
+h1 {
+  margin: 0;
+  background-color: var(--darkPurples);
+  width: 100%;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  box-shadow: 0px 5px 5px #19254de3;
+}
+
+table {
+  border: 1px solid red;
+  text-align: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.buttonSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.buttonSection > span {
+  margin-bottom: 5%;
+}
+
+.scanBtn {
+  cursor: pointer;
+  width: 120px;
+  height: 25px;
+  border-radius: 20px 20px;
+  border: none;
+  background-color: var(--lightPurple);
+  color: var(--textColor);
+}
+
+.scanBtn:disabled {
+  cursor: pointer;
+  padding: 3% 10%;
+  border-radius: 20px 20px;
+  border: none;
+  background-color: #5168bb80;
+  color: #86839cad;
+  cursor: default;
+}
