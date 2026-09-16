@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 
 .env
+
+electron/data/devices.json
