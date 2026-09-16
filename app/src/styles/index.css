@@ -1,0 +1,16 @@
+@import "./variables.css";
+
+body {
+  background-color: var(--darkPurple);
+  color: var(--textColor);
+  font-family: var(--textFont);
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
